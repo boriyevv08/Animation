@@ -1,0 +1,74 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+.container{
+   position: relative;
+   width: 1745px;
+   height: 849.2px;
+   background-repeat: no-repeat;
+   background-image: url(https://avatars.mds.yandex.net/i?id=6f6f0c5a8b678a21b886f786ed2ef8aa-4077925-images-thumbs&n=13);
+   background-size: cover;
+   background-position: center;
+   overflow: hidden;
+}
+
+.sun{
+   width: 200px;
+   height: 200px;
+   background-color: none;
+   animation: sun 30s ease-in-out 0s infinite normal none;
+   -webkit-animation: sun 30s ease-in-out 0s infinite normal none;
+}
+
+.plane{
+   width: 350px;
+   height: 280px;
+   background-color: none;
+   animation: object 30s ease-in-out 0s infinite normal none;
+   -webkit-animation: object 30s ease-in-out 0s infinite normal none;
+}
+
+.cloud1{
+   margin-left: 250px;
+   margin-right: 350px;
+}
+
+.clouds{
+   position: relative;
+   display: flex;
+   width: 100vw;
+   height: auto;
+   background-color: none;
+   animation: cloud 20s ease-in-out 0s infinite normal none;
+   -webkit-animation: cloud 30s ease-in-out 0s infinite normal none;
+}
+
+@keyframes sun {
+   0%  { 
+      margin-left: 100%;   }
+
+   100% {
+     margin-left: -15%;
+   } 
+}
+
+@keyframes object {
+   0% {
+      margin-left: -25% ;
+
+   }
+   100% {
+      margin-left: 100%;
+   }
+}
+
+@keyframes cloud {
+   0%  { 
+      margin-left: 100%;   }
+
+   100% {
+     margin-left: -300%;
+   } 
+}
